@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage[normalem]{ulem}
+\usepackage{algorithm2e}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{scalerel}
+\def\thumbsup{}   % To be removed
+\def\thumbsdown{}  % To be removed
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usetheme{Frankfurt}
+\usecolortheme{seahorse}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{tabu, mathtools}
+\usepackage{enumitem}
+\setitemize{label=\usebeamerfont*{itemize item}%
+	\usebeamercolor[fg]{itemize item}
+	\usebeamertemplate{itemize item}}
+
+\newcommand\Wider[2][3em]{%
+	\makebox[\linewidth][c]{%
+		\begin{minipage}{\dimexpr\textwidth+#1\relax}
+			\raggedright#2
+		\end{minipage}%
+	}%
+}
+
+\renewcommand*\footnoterule{}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\definecolor{PPorange}{RGB}{237,125,49}
+\definecolor{PPgreen}{RGB}{112,173,71}
+\definecolor{PPblue}{RGB}{91,155,213}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\AtBeginSection{\frame{\sectionpage}} % This line enables sectiontitle-slides
+
+\renewcommand{\footnotesize}{\scriptsize}
+
+\title{Reinforcement Learning}
+\author{M. Pl\"uss, E. Arnold}
+\institute{
+    University of Basel
+}
+\date{Mai 13, 2019}
+
+\begin{document}
+\maketitle
+
+
+\input{elias}
+\input{michael}
+
+\end{document}
