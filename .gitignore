@@ -2,7 +2,6 @@
 *.bbl
 *.blg
 *.log
-*.pdf
 *.out
 *.synctex.gz
 !summary/feedback/*.pdf
